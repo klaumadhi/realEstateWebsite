@@ -1,11 +1,45 @@
+@import "../../responsive.scss";
+
 .singlePage{
     display: flex;
     height: 100%;
+
+    @include md{
+      flex-direction: column; 
+
+      overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+
+
     .details{
         flex: 3;
+        overflow-y: scroll;
+        
+
+        @include md{
+        
+      
+            overflow-y:initial;
+            margin-bottom: 50px;
+      
+          }
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
 
         .wrapper{
             padding-right: 50px;
+
+            @include sm{
+        
+      
+                padding: 0;
+              }
         }
 
 
@@ -74,12 +108,30 @@
     .features{
         flex: 2;
         background-color: #fcf5f3;
+        height: 100%;
+        overflow-y: scroll;
+
+
+        @include md{
+        
+      
+            overflow-y:initial;
+            margin-bottom: 200px;
+          }
+
+          
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
 
         .wrapper{
             padding:0px 20px;
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            
 
             img{
                 width: 24px;
@@ -120,6 +172,49 @@
                 padding: 20px 10px;
                 background-color: white;
                 border-radius: 10px;
+            }
+            .listHorizontal{
+                display: flex;
+              justify-content: space-between;
+                padding: 20px 10px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .sizes{
+                display: flex;
+                justify-content: space-between;
+
+                @include lg{
+                    font-size: 12px
+                }
+
+                .size{
+                    display: flex;align-items: center;gap: 10px;
+                    background-color: white;
+                }
+            }
+
+
+            .mapContainer{
+                    width: 100%;
+                    height: 200px;
+            }
+
+            .buttons{
+                display: flex;justify-content: space-between;
+
+                button{
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: white;
+                    border: 1px solid #fece51;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                }
             }
 
         }

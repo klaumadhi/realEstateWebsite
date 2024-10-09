@@ -62,17 +62,17 @@ export default function SinglePage() {
             <div className="size">
               <img src="/size.png" alt="" />
               <span>80 m2</span>
-              <p>3</p>
+            
             </div>
             <div className="size">
               <img src="/bed.png" alt="" />
               <span>2 bed</span>
-              <p>3</p>
+            
             </div>
             <div className="size">
               <img src="/bath.png" alt="" />
               <span>1 bathroom</span>
-              <p>3</p>
+            
             </div>
             
           </div>
