@@ -1,9 +1,10 @@
 @import "../../responsive.scss";
 
 .searchBar{
+
     .type{
      
-        button{
+        .switchButton{
             padding: 16px 36px;
             border: 1pxx solid #999;
             border-bottom: none;
@@ -43,6 +44,7 @@
         }
 
         input{
+            flex: 3;
             border: none;
             padding: 0px 0px;
             
@@ -55,7 +57,7 @@
                 }
             }
             @include md{
-                width: 200px;
+                
 
                 &:nth-child(2),&:nth-child(3){
                     width: 200px;
@@ -75,14 +77,15 @@
             cursor: pointer;
             background-color: #fece51;
             flex: 1;
-
+      
             @include sm{
-                padding: 10px;
+              padding: 10px;
             }
+      
             img {
-                width: 24px;
-                height: 24px;
+              width: 24px;
+              height: 24px;
             }
+          }
         }
-    }
-}
+      }

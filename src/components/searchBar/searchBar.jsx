@@ -17,7 +17,7 @@ export default function SearchBar() {
     <div className="searchBar">
         <div className="type">
             {types.map((type)=>(
-                <button key={type} onClick={()=> switchType(type)} className={query.type === type ? "active": ""}>{type}</button>
+                <button key={type} onClick={()=> switchType(type)} className={query.type === type ? "switchButton active": "switchButton"}>{type}</button>
 
             ))}
            
@@ -26,7 +26,7 @@ export default function SearchBar() {
                 <input type="number" name="minPrice" min={0} max={10000000} placeholder="Min Price"/>
                 <input type="number" name="maxPrice" min={0} max={10000000} placeholder="Max Price"/>
                 <button>
-                    <img src="/search.png" alt="search" />
+                    <img src="/search.png" alt="" />
                 </button>
             </form>
         </div>
